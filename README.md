@@ -67,7 +67,7 @@ Update `src/App.js` to cleanup unused code
 #### 1. Add MUI to dependency
 
 ```sh
-yarn add @mui/material @mui/styled-engine-sc styled-components
+yarn add @mui/material @emotion/react @emotion/styled
 ```
 
 #### 2. Add Roboto Font
