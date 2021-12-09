@@ -3,7 +3,7 @@
 #### 0. Remove unused code
 
 ```sh
-rm public/logo192.png public/logo512.png src/setupTests.js src/reportWebVitals.js src/logo.svg src/App.test.js src/App.css src/index.css
+rm public/favicon.ico public/logo192.png public/logo512.png src/setupTests.js src/reportWebVitals.js src/logo.svg src/App.test.js src/App.css src/index.css
 ```
 
 Update `public/index.html` to cleanup unused code
@@ -84,4 +84,16 @@ Append this tag in public/index.html
   rel="stylesheet"
   href="https://fonts.googleapis.com/icon?family=Material+Icons"
 />
+```
+
+#### 3. Update image asset with BRIN Logo
+
+* Download Favicon ([Source](https://www.brin.go.id/wp-content/themes/ristekdikti2018/assets/img/new_favicon.png))
+* Download Logo ([Source](https://www.brin.go.id/wp-content/themes/ristekdikti2018/assets/img/new_brinlogo.png))
+
+Then, update `public/index.html` to update the favicon
+
+```diff
++ <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+- <link rel="icon" href="%PUBLIC_URL%/favicon.png" />
 ```
