@@ -1,8 +1,13 @@
 import React from 'react';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import CssBaseline from '@mui/material/CssBaseline';
-import Toolbar from '@mui/material/Toolbar';
-import AppBar from '@mui/material/AppBar';
+import {
+  AppBar,
+  CssBaseline,
+  Container,
+  Toolbar,
+  Paper,
+} from '@mui/material';
+import Table from './Table';
 
 const brinTheme = createTheme({
   palette: {
@@ -23,6 +28,13 @@ function App() {
           BRIN Dashboard
         </Toolbar>
       </AppBar>
+
+      <Container maxWidth="lg" sx={{ mt: 4, mb: 4 }}>
+        <Toolbar />
+        <Paper sx={{ p: 2, display: 'flex', flexDirection: 'column' }}>
+          <Table />
+        </Paper>
+      </Container>
     </ThemeProvider>
   );
 }
