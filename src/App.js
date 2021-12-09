@@ -1,20 +1,29 @@
+import React from 'react';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+import CssBaseline from '@mui/material/CssBaseline';
+import Toolbar from '@mui/material/Toolbar';
+import AppBar from '@mui/material/AppBar';
+
+const brinTheme = createTheme({
+  palette: {
+    primary: {
+      main: '#ff2442',
+      dark: '#b2192e',
+      light: '#ff657a',
+    }
+  }
+});
+
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={brinTheme}>
+      <CssBaseline />
+      <AppBar>
+        <Toolbar>
+          BRIN Dashboard
+        </Toolbar>
+      </AppBar>
+    </ThemeProvider>
   );
 }
 
