@@ -97,3 +97,12 @@ Then, update `public/index.html` to update the favicon
 + <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
 - <link rel="icon" href="%PUBLIC_URL%/favicon.png" />
 ```
+
+(Optional) Update manifest.json
+
+```diff
++ "short_name": "React App",
++ "name": "Create React App Sample",
+- "short_name": "Brin Dashboard",
+- "name": "Brin Dashboard for React Workshop Demo",
+```
